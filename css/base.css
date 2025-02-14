@@ -1,0 +1,94 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+/* html variabler */
+html {
+  --primary_grey: #f1f1f1;
+  --orange: #ff6201;
+  --darkgrey: #463f3f;
+  --text_darkgrey: #2a2626;
+  --black: #000000;
+  --light_yellow: #ffe9bf;
+}
+
+/* body og main */
+main {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* bold */
+@font-face {
+  font-family: "neue_haas_grotesk_display75Bd";
+  src: url(../fonte/neue/neuehaasdisplay-bold-webfont.woff2) format("woff2"), url(../fonte/neue/neuehaasdisplay-bold-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* light  */
+
+@font-face {
+  font-family: "neue_haas_grotesk_display45Lt";
+  src: url(../fonte/neue/neuehaasdisplay-light-webfont.woff2) format("woff2"), url(../fonte/neue/neuehaasdisplay-light-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* medium */
+
+@font-face {
+  font-family: "neue_haas_grotesk_display65Md";
+  src: url(../fonte/neue/neuehaasdisplay-mediu-webfont.woff2) format("woff2"), url(../fonte/neue/neuehaasdisplay-mediu-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* thin */
+
+@font-face {
+  font-family: "neue_haas_grotesk_display35Th";
+  src: url(../fonte/neue/neuehaasdisplay-thin-webfont.woff2) format("woff2"), url(../fonte/neue/neuehaasdisplay-thin-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* black */
+
+@font-face {
+  font-family: "neue_haas_grotesk_displa95Blk";
+  src: url(../fonte/neue/neuehaasdisplay-black-webfont.woff2) format("woff2"), url(../fonte/neue/neuehaasdisplay-black-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* light italic */
+@font-face {
+  font-family: "neue_haas_grotesk_displ36ThIt";
+  src: url(../fonte/neue/neuehaasdisplay-thinitalic-webfont.woff2) format("woff2"), url(../fonte/neue/neuehaasdisplay-thinitalic-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* optipirogi */
+@font-face {
+  font-family: "optipirogi-romanregular";
+  src: url(../fonte/optipirogi/optipirogi-roman-webfont.woff2) format("woff2"), url(../fonte/optipirogi/optipirogi-roman-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media (min-width: 920px) {
+}
