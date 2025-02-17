@@ -3,7 +3,6 @@ body {
   margin: 0;
   padding: 0;
   background: #222;
-  color: white;
 }
 
 nav {
@@ -33,10 +32,10 @@ nav {
 .nav-links a {
   color: white;
   text-decoration: none;
-  font-size: 16px; /* Lidt større tekst for bedre læsbarhed */
+  font-size: 16px;
   font-weight: bold;
   color: #ffe9bf;
-  padding: 10px 15px; /* Giver lidt ekstra mellemrum mellem links */
+  padding: 10px 15px;
 }
 
 .hero {
@@ -79,6 +78,7 @@ nav {
 .about {
   padding: 40px 5%;
   text-align: center;
+  color: #ffe9bf;
 }
 
 .about h2 {
@@ -91,6 +91,7 @@ footer {
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  background: linear-gradient(to top, black, #222);
 }
 
 .social-links {
@@ -104,7 +105,7 @@ footer {
 }
 
 .footer-logo img {
-  height: 50px;
+  height: 120px;
 }
 
 @media (min-width: 768px) {
@@ -123,6 +124,33 @@ footer {
     width: 100%;
   }
   .about {
-    padding: 60px 10%;
+    padding: 150px 10%;
+  }
+
+  /* Opdateret footer for desktop */
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 0px;
+
+    .footer-logo {
+      margin-left: 20%;
+    }
+
+    .footer-logo img {
+      height: 120px;
+    }
+  }
+
+  .social-links img {
+    width: 35px;
   }
 }
