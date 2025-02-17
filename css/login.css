@@ -1,0 +1,72 @@
+.login-signup-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.login-form,
+.signup-form {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+.login-form h2,
+.signup-form h2 {
+  margin-bottom: 2rem;
+}
+
+.login-form label,
+.signup-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: "neue_haas_grotesk_display35Th";
+  font-size: 18px;
+}
+
+.login-form input,
+.signup-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.signup-form div {
+  margin-bottom: 10px;
+}
+
+.login-form button,
+.signup-form button {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  border: solid 1.5px rgb(210, 210, 210);
+  border-radius: 4px;
+  margin-top: 0.6rem;
+  color: var(--darkgrey);
+  border: solid 2px var(--orange);
+  font-family: "neue_haas_grotesk_display65Md";
+  font-size: 16px;
+}
+
+button a {
+  text-decoration: none;
+  color: var(--darkgrey);
+}
+
+.login-form button:hover,
+.signup-form button:hover {
+  scale: 1.02;
+  transition: all 0.2s ease;
+  border: solid 2px var(--orange);
+  color: var(--orange);
+}
+
+button a:hover {
+  color: var(--orange);
+  transition: all 0.2s ease;
+}
