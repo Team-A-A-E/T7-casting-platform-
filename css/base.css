@@ -90,5 +90,22 @@ main {
   font-style: normal;
 }
 
+.search-input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu li {
+  list-style: none;
+  margin-right: 1rem; /* Juster afstanden mellem elementerne efter behov */
+}
+
 @media (min-width: 920px) {
 }

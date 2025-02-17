@@ -1,3 +1,197 @@
 h1 {
   font-family: "optipirogi-romanregular";
 }
+
+main {
+  background-color: var(--primary_grey);
+  max-width: 1000px;
+}
+
+body {
+  background-color: var(--primary_grey);
+}
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.grid_1-1_2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.div_info {
+  margin-top: 6rem;
+}
+
+h2 {
+  font-family: "neue_haas_grotesk_display75Bd";
+  font-size: 50px;
+  color: var(--darkgrey);
+}
+
+h3 {
+  font-family: "neue_haas_grotesk_display65Md";
+  font-size: 28px;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  color: var(--darkgrey);
+}
+.h3 {
+  font-family: "neue_haas_grotesk_display65Md";
+  font-size: 22px;
+  margin-bottom: 2rem;
+  text-decoration: none;
+  color: var(--darkgrey);
+}
+.h3:hover {
+  color: var(--orange);
+  transition: all 0.2s ease;
+}
+
+h4 {
+  font-family: "neue_haas_grotesk_display35Th";
+  font-size: 26px;
+  margin-bottom: 2rem;
+  text-decoration: none;
+  color: var(--darkgrey);
+}
+
+p {
+  font-family: "neue_haas_grotesk_display35Th";
+  font-size: 26px;
+  margin-bottom: 1rem;
+  max-width: 50rem;
+  color: var(--darkgrey);
+}
+
+.p_2 {
+  font-family: "neue_haas_grotesk_display35Th";
+  font-size: 22px;
+  margin-bottom: 1rem;
+  max-width: 50rem;
+  color: var(--darkgrey);
+}
+
+.add_to_basket {
+  border: solid 1.5px rgb(210, 210, 210);
+  border-radius: 4px;
+  margin-top: 0.6rem;
+  color: var(--darkgrey);
+  border: solid 1px var(--orange);
+}
+
+.name_mobile {
+  display: none;
+}
+
+.add_to_basket:hover {
+  scale: 1.02;
+  transition: all 0.2s ease;
+  border: solid 1.5px var(--orange);
+}
+
+h5 {
+  font-family: "neue_haas_grotesk_display65Md";
+  font-size: 20px;
+  padding: 1rem;
+  max-width: 50rem;
+  color: var(--darkgrey);
+}
+
+.add_to_basket a {
+  text-align: center;
+  text-decoration: none;
+}
+
+.div_contact {
+  margin-top: 7rem;
+}
+
+@media (max-width: 750px) {
+  .name_mobile2 {
+    display: none;
+  }
+
+  .name_mobile {
+    display: block;
+  }
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  .grid_1-1_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .div_info {
+    margin-top: 3rem;
+  }
+
+  .div_contact {
+    margin-top: 3rem;
+  }
+
+  h2 {
+    font-family: "neue_haas_grotesk_display75Bd";
+    font-size: 40px;
+    color: var(--darkgrey);
+  }
+
+  h3 {
+    font-family: "neue_haas_grotesk_display65Md";
+    font-size: 22px;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    color: var(--darkgrey);
+  }
+  .h3 {
+    font-family: "neue_haas_grotesk_display65Md";
+    font-size: 20px;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    color: var(--darkgrey);
+  }
+  .h3:hover {
+    color: var(--orange);
+    transition: all 0.2s ease;
+  }
+
+  h4 {
+    font-family: "neue_haas_grotesk_display35Th";
+    font-size: 22px;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    color: var(--darkgrey);
+  }
+
+  p {
+    font-family: "neue_haas_grotesk_display35Th";
+    font-size: 20px;
+    margin-bottom: 1rem;
+    max-width: 50rem;
+    color: var(--darkgrey);
+  }
+
+  .p_2 {
+    font-family: "neue_haas_grotesk_display35Th";
+    font-size: 18px;
+    margin-bottom: 1rem;
+    max-width: 50rem;
+    color: var(--darkgrey);
+  }
+}
