@@ -5,6 +5,7 @@ h1 {
 main {
   background-color: var(--primary_grey);
   max-width: 1000px;
+  padding: 20px;
 }
 
 body {
@@ -21,11 +22,14 @@ body {
 .grid_1-1_2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+}
+
+.grid_1-1_2-img img {
+  padding: 5px;
 }
 
 .div_info {
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 
 h2 {
@@ -64,6 +68,14 @@ h4 {
 p {
   font-family: "neue_haas_grotesk_display35Th";
   font-size: 26px;
+  margin-bottom: 1rem;
+  max-width: 50rem;
+  color: var(--darkgrey);
+}
+
+span {
+  font-family: "neue_haas_grotesk_display65Md";
+  font-size: 25px;
   margin-bottom: 1rem;
   max-width: 50rem;
   color: var(--darkgrey);
@@ -109,7 +121,25 @@ h5 {
 }
 
 .div_contact {
-  margin-top: 7rem;
+  margin-top: 5rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(var(--primary_grey), var(--lightgrey));
+  margin-top: 4rem;
+  padding: 30px;
+}
+
+.footer-container img {
+  width: 60%;
+  place-self: end;
+}
+
+.footer_right {
+  align-self: end;
+  place-self: end;
 }
 
 @media (max-width: 750px) {
@@ -139,7 +169,7 @@ h5 {
   }
 
   .div_info {
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
 
   .div_contact {

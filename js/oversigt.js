@@ -56,18 +56,18 @@ function applyFilters(users) {
 }
 
 // Toggle dropdown visibility
-document.querySelector('.filter-button').addEventListener('click', () => {
-  document.querySelector('.filter-dropdown').classList.toggle('show');
+document.querySelector(".filter-button").addEventListener("click", () => {
+  document.querySelector(".filter-dropdown").classList.toggle("show");
 });
 
 // Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.filter-button')) {
+window.onclick = function (event) {
+  if (!event.target.matches(".filter-button")) {
     const dropdowns = document.getElementsByClassName("filter-dropdown");
     for (let i = 0; i < dropdowns.length; i++) {
       const openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
+      if (openDropdown.classList.contains("show")) {
+        openDropdown.classList.remove("show");
       }
     }
   }

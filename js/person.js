@@ -4,15 +4,15 @@ const id = urlParams.get("id");
 const profileContainers = document.querySelector(".grid_1-1");
 
 if (profileContainers) {
-  let fetchUrl = `https://dummyjson.com/users?id=${id}`;
+  let fetchUrl = `https://dummyjson.com/users/${id}`; // Opdateret URL
 
   fetch(fetchUrl)
     .then((response) => response.json())
     .then((data) => {
       console.log("Data fetched:", data);
-      showList(data.users);
+      showList([data]); // Opdateret for at sende en enkelt bruger
       document.getElementById("apply-filters").addEventListener("click", () => {
-        applyFilters(data.users);
+        applyFilters([data]); // Opdateret for at sende en enkelt bruger
       });
     })
     .catch((error) => {
@@ -21,20 +21,20 @@ if (profileContainers) {
 }
 
 function showList(users) {
-  console.log("Showing list of users:", users);
+  console.log("Showing user:", users);
   const markup = users
     .map(
       (user) => `
-    
-              <div class="grid_1-1">
-        <div>
-          <div>
+        <div class="grid_1-1_2-img">
+          <div >
             <div class="name_mobile">
               <h2>${user.firstName} ${user.lastName}</h2>
               <h4>${user.age} years, ${user.address.state}</h4>
             </div>
+
             <img src="https://randomuser.me/api/portraits/men/${user.id}.jpg" alt="" />
           </div>
+
           <div class="grid_1-1_2">
             <img src="https://randomuser.me/api/portraits/men/${user.id}.jpg" alt="" />
             <img src="https://randomuser.me/api/portraits/men/${user.id}.jpg" alt="" />
@@ -42,16 +42,16 @@ function showList(users) {
         </div>
         <div>
           <div class="name_mobile2">
-            <h2>NAME NAME</h2>
-            <h4>${user.age} years, ${user.city}</h4>
+              <h2>${user.firstName} ${user.lastName}</h2>
+              <h4>${user.age} years, ${user.address.state}</h4>
           </div>
           <div class="div_info">
-          <p>Age: ${user.age}</p>
-            <p>City: ${user.address.city}</p>
-            <p>Height: ${user.height} cm</p>
-            <p>Weight: ${user.weight} kg</p>
-            <p>Haircolor, type :${user.hair.color} ${user.hair.type} </p>
-            <p>Eye color: ${user.eyeColor}</p>
+          <p> <span>Age:</span> ${user.age}</p>
+            <p> <span>City:</span>  ${user.address.city}</p>
+            <p> <span>Height:</span> ${user.height} cm</p>
+            <p> <span>Weight:</span> ${user.weight} kg</p>
+            <p> <span>Haircolor, type:</span> ${user.hair.color} ${user.hair.type} </p>
+            <p> <span>Eye color:</span> ${user.eyeColor}</p>
           </div>
           <div class="div_contact">
             <div class="add_to_basket">
@@ -65,9 +65,7 @@ function showList(users) {
             </div>
           </div>
         </div>
-      </div>
-        
-        
+
         `
     )
     .join("");
