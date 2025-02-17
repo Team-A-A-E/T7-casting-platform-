@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/person.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/login.css" />
+
+    <title>Login / Sign Up</title>
+  </head>
+
+  <body>
+    <div class="top">
+      <header>
+        <div class="header-container">
+          <div class="logo">
+            <a href="index.html">
+              <img src="imgs/logo.svg" alt="" class="img_logo" />
+            </a>
+          </div>
+          <div class="menu menu_left"><p>B-ROLL CASTING</p></div>
+        </div>
+        <nav>
+          <ul class="menu">
+            <li><a href="login.html">LOG IN</a></li>
+            <li><a href="oversigt.html">SEARCH EXTRAS</a></li>
+          </ul>
+          <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <main>
+      <div class="login-signup-container">
+        <div class="login-form">
+          <h2>Log In</h2>
+          <form>
+            <label for="login-email">Email:</label>
+            <input type="email" id="login-email" name="login-email" required />
+            <label for="login-password">Password:</label>
+            <input type="password" id="login-password" name="login-password" required />
+            <button type="submit"><a href="welcome.html">Log In</a></button>
+          </form>
+        </div>
+        <div class="signup-form">
+          <h2>Sign Up</h2>
+          <form>
+            <label for="signup-firstname">First Name:</label>
+            <input type="text" id="signup-firstname" name="signup-firstname" required />
+            <label for="signup-lastname">Last Name:</label>
+            <input type="text" id="signup-lastname" name="signup-lastname" required />
+            <label for="signup-email">Email:</label>
+            <input type="email" id="signup-email" name="signup-email" required />
+            <label for="signup-birthday">Birthday:</label>
+            <input type="date" id="signup-birthday" name="signup-birthday" required />
+            <label for="signup-password">Password:</label>
+            <input type="password" id="signup-password" name="signup-password" required />
+            <label for="signup-confirm-password">Confirm Password:</label>
+            <input type="password" id="signup-confirm-password" name="signup-confirm-password" required />
+
+            <button type="submit"><a href="welcome.html">Sign Up</a></button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer_left">
+          <img src="" alt="" />
+          <p>© 2025 B-ROLL CASTING</p>
+        </div>
+        <div class="footer_right">
+          <ul>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="js/burger.js"></script>
+    <script src="js/person.js"></script>
+  </body>
+</html>
