@@ -1,0 +1,114 @@
+main {
+  background-color: var(--primary_grey);
+  max-width: 1000px;
+  padding: 20px;
+}
+
+body {
+  background-color: var(--primary_grey);
+}
+
+h1 {
+  font-family: "neue_haas_grotesk_display75Bd";
+  font-size: 60px;
+  color: var(--darkgrey);
+  text-align: center;
+  margin-top: 8rem;
+}
+
+h2 {
+  font-family: "neue_haas_grotesk_display75Bd";
+  font-size: 54px;
+  color: var(--darkgrey);
+  text-align: center;
+  margin-top: 8rem;
+  margin-bottom: 2rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(var(--primary_grey), var(--lightgrey));
+  margin-top: 4rem;
+  padding: 30px;
+}
+
+.footer-container img {
+  width: 60%;
+  place-self: end;
+}
+
+.footer_right {
+  align-self: end;
+  place-self: end;
+}
+
+p {
+  font-family: "neue_haas_grotesk_display35Th";
+  font-size: 20px;
+  margin-bottom: 1rem;
+  max-width: 50rem;
+  color: var(--darkgrey);
+}
+
+.text_intro p {
+  font-family: "neue_haas_grotesk_display35Th";
+  font-size: 20px;
+  max-width: 50rem;
+  color: var(--darkgrey);
+  text-align: center;
+  margin-bottom: 1rem;
+  margin: 0 auto;
+}
+
+.add_to_basket {
+  border-radius: 4px;
+  margin-top: 0.6rem;
+  color: var(--darkgrey);
+  border: solid 1px var(--orange);
+  width: 400px;
+  place-self: center;
+}
+
+.add_to_basket a {
+  text-align: center;
+  color: var(--darkgrey);
+  border: solid 1px var(--orange);
+  text-decoration: none;
+  font-family: "neue_haas_grotesk_display65Md";
+  font-size: 20px;
+}
+
+.add_to_basket:hover {
+  scale: 1.02;
+  transition: all 0.2s ease;
+  border: solid 1.5px var(--orange);
+}
+
+@media (max-width: 750px) {
+  main {
+    padding: 20px;
+  }
+
+  h2 {
+    font-family: "neue_haas_grotesk_display75Bd";
+    font-size: 40px;
+    color: var(--darkgrey);
+  }
+
+  h3 {
+    font-family: "neue_haas_grotesk_display65Md";
+    font-size: 22px;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    color: var(--darkgrey);
+  }
+
+  p {
+    font-family: "neue_haas_grotesk_display35Th";
+    font-size: 20px;
+    margin-bottom: 1rem;
+    max-width: 50rem;
+    color: var(--darkgrey);
+  }
+}
