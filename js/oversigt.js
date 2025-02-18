@@ -25,7 +25,7 @@ function showList(users) {
   const markup = users
     .map(
       (user) => `<div class="box" data-gender="${user.gender}" data-age="${user.age}" data-category="${user.category}">
-          <img src="https://randomuser.me/api/portraits/men/${user.id % 100}.jpg" alt="profile" class="profile-img" />
+          <img src="https://randomuser.me/api/portraits/${user.gender == "female" ? "women" : "men"}/${user.id % 100}.jpg" alt="profile" class="profile-img" />
           <div class="feature">
             <div class="PersonDetails">
               <h3 class="PersonName">${user.firstName} ${user.lastName}</h3>

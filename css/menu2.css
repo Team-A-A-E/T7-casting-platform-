@@ -126,7 +126,7 @@ nav {
 
   nav.active .menu {
     display: block;
-    background-color: var(--orange);
+    background-color: var(--light_yellow);
     position: absolute;
     top: 94px;
     left: 0;
@@ -140,6 +140,7 @@ nav {
 
   nav.active .menu a {
     font-size: 24px;
+    color: var(--darkgrey);
   }
 
   .img_logo {

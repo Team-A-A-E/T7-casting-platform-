@@ -2,6 +2,7 @@ main {
   background-color: var(--primary_grey);
   max-width: 1000px;
   padding: 20px;
+  margin: 0 auto;
 }
 
 body {
@@ -68,12 +69,12 @@ p {
   border: solid 1px var(--orange);
   width: 400px;
   place-self: center;
+  padding: 1rem;
 }
 
 .add_to_basket a {
   text-align: center;
   color: var(--darkgrey);
-  border: solid 1px var(--orange);
   text-decoration: none;
   font-family: "neue_haas_grotesk_display65Md";
   font-size: 20px;
@@ -83,6 +84,7 @@ p {
   scale: 1.02;
   transition: all 0.2s ease;
   border: solid 1.5px var(--orange);
+  color: var(--orange);
 }
 
 @media (max-width: 750px) {
