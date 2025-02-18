@@ -2,7 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #222;
+  background: var(--text_darkgrey);
 }
 
 header {
@@ -20,7 +20,6 @@ h1 {
 }
 
 .hero {
-  position: relative;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -53,13 +52,13 @@ h1 {
   padding: 15px;
   border-radius: 10px;
   width: 90%;
-  color: #ffe9bf;
+  color: var(--light_yellow);
 }
 
 .about {
   padding: 40px 5%;
   text-align: center;
-  color: #ffe9bf;
+  color: var(--light_yellow);
 }
 
 .about h2 {
@@ -72,7 +71,7 @@ footer {
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  background: linear-gradient(to top, black, #222);
+  background: linear-gradient(to top, black, var(--text_darkgrey));
 }
 
 .social-links {
@@ -146,17 +145,17 @@ nav.active .menu a {
   font-weight: 700;
   text-decoration: none;
   font-family: "neue_haas_grotesk_display75Bd";
+  color: var(--light_yellow);
   margin-left: 1rem;
 }
 
 header {
   position: sticky;
   z-index: 100;
-  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
 }
 
 @media (min-width: 750px) {
@@ -195,6 +194,7 @@ header {
   .menu_left p {
     font-family: "neue_haas_grotesk_display45Lt";
     font-size: 22px;
+    color: var(--light_yellow);
   }
 
   header {
@@ -203,8 +203,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--primary_grey);
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
   }
 
   nav {
@@ -231,6 +229,7 @@ header {
     display: block;
     padding: 10px;
     color: var(--text_darkgrey);
+    color: var(--light_yellow);
     text-decoration: none;
     transition: color 0.3s;
     text-align: end;

@@ -1,3 +1,7 @@
+main {
+  max-width: 900px;
+  margin: 0 auto;
+}
 .login-signup-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -69,4 +73,13 @@ button a {
 button a:hover {
   color: var(--orange);
   transition: all 0.2s ease;
+}
+
+@media screen and (max-width: 750px) {
+  .login-signup-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
 }
