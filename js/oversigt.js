@@ -4,7 +4,7 @@ const category = urlParams.get("category");
 const profileContainers = document.querySelector(".profile-containers");
 
 if (profileContainers) {
-  let fetchUrl = `https://dummyjson.com/users?limit=50`;
+  let fetchUrl = `https://dummyjson.com/users?limit=150`;
 
   fetch(fetchUrl)
     .then((response) => response.json())
@@ -47,7 +47,7 @@ function applyFilters(users) {
 
   const filteredUsers = users.filter((user) => {
     let genderMatch = genderFilter === "all" || user.gender === genderFilter;
-    let ageMatch = ageFilter === "all" || (ageFilter === "young" && user.age < 30) || (ageFilter === "middle-aged" && user.age >= 30 && user.age < 50) || (ageFilter === "old" && user.age >= 50);
+    let ageMatch = ageFilter === "all" || (ageFilter === "young" && user.age < 30) || (ageFilter === "middle-aged" && user.age >= 30 && user.age < 40) || (ageFilter === "old" && user.age >= 40);
     return genderMatch && ageMatch;
   });
 
