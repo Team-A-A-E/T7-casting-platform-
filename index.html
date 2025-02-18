@@ -1,27 +1,36 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/base.css" />
     <title>B-ROLL CASTING</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="logo">
-          <a href="index.html">
-            <img src="b-roll-logo.png" alt="B-Roll Casting Logo" />
-          </a>
+    <div class="top">
+      <header>
+        <div class="header-container">
+          <div class="logo">
+            <a href="index.html">
+              <img src="imgs/logo.svg" alt="" class="img_logo" />
+            </a>
+          </div>
+          <div class="menu menu_left"><p>B-ROLL CASTING</p></div>
         </div>
-        <div class="nav-links">
-          <a href="#">LOG IN</a>
-          <a href="oversigt.html">B-ROLL CASTING</a>
-          <a href="#">SEARCH EXTRAS</a>
-        </div>
-      </nav>
-    </header>
+        <nav>
+          <ul class="menu">
+            <li><a href="login.html">LOG IN</a></li>
+            <li><a href="oversigt.html">SEARCH EXTRAS</a></li>
+          </ul>
+          <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </nav>
+      </header>
+    </div>
     <div class="hero">
       <video autoplay muted loop class="hero-video">
         <source src="video.mp4" type="video/mp4" />
@@ -52,6 +61,6 @@
         <img src="b-roll-footer-logo.png" alt="B-Roll Casting Footer Logo" />
       </div>
     </footer>
+    <script src="js/burger.js"></script>
   </body>
 </html>
-
