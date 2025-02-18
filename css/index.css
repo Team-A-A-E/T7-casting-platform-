@@ -5,16 +5,14 @@ body {
   background: var(--text_darkgrey);
 }
 
-header {
-  position: sticky;
-  z-index: 100;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+h1 {
+  font-family: "optipirogi-romanregular";
+  font-size: 50px;
+  color: var(--light_yellow);
 }
 
-h1 {
-  font-family: "neue_haas_grotesk_display75Bd";
+h3 {
+  font-family: "optipirogi-romanregular";
   font-size: 50px;
   color: var(--light_yellow);
 }
@@ -66,96 +64,22 @@ h1 {
   margin-bottom: 15px;
 }
 
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  background: linear-gradient(to top, black, var(--text_darkgrey));
-}
-
-.social-links {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 10px;
-}
-
-.social-links img {
-  width: 25px;
-}
-
-.footer-logo img {
-  height: 120px;
-}
-
-.menu {
-  display: none;
-  margin: 0;
-  margin-top: 1rem;
-}
-.burger {
-  display: block;
-}
-
-.burger.active .line {
-  background-color: var(--orange);
-}
-
-.burger.active .line:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-  transition: 0.2s linear;
-}
-
-.burger.active .line:nth-child(2) {
-  opacity: 0;
-  transition: 0.15s linear;
-}
-
-.burger.active .line:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
-  transition: 0.2s linear;
-}
-
-nav.active .menu {
-  display: block;
-  background-color: var(--primary_grey);
-  position: absolute;
-  top: 94px;
-  left: 0;
-  width: 100%;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  z-index: 1;
-}
-
-nav.active .menu li {
-  margin: 10px 20px;
-}
-
-nav.active .menu a {
-  font-size: 24px;
-}
-
-.img_logo {
-  width: 90%;
-  margin-left: 1rem;
-}
-
-.text_logo {
-  font-size: 22px;
-  font-weight: 700;
-  text-decoration: none;
-  font-family: "neue_haas_grotesk_display75Bd";
-  color: var(--light_yellow);
-  margin-left: 1rem;
-}
-
-header {
-  position: sticky;
-  z-index: 100;
+.footer-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  background-color: transparent;
+  background: linear-gradient(var(--text_darkgrey), black);
+  margin-top: 4rem;
+  padding: 30px;
+}
+
+.footer-container img {
+  width: 60%;
+  place-self: end;
+}
+
+.footer_right {
+  align-self: end;
+  place-self: end;
 }
 
 @media (min-width: 750px) {
@@ -165,128 +89,10 @@ header {
     box-sizing: border-box;
   }
 
-  .top {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 10;
-  }
-
-  .img_logo {
-    width: 90%;
-    margin-left: 2rem;
-  }
-
-  .header-container {
-    display: flex;
-    align-items: center;
-  }
-
-  .logo {
-    width: 100px;
-    margin-right: 10px; /* Juster afstanden mellem logoet og teksten efter behov */
-  }
-
-  .menu_left {
-    margin: 0;
-  }
-
-  .menu_left p {
-    font-family: "neue_haas_grotesk_display45Lt";
-    font-size: 22px;
-    color: var(--light_yellow);
-  }
-
-  header {
-    position: sticky;
-    z-index: 100;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  nav {
-    display: flex;
-    align-items: center;
-  }
-
-  .menu {
-    display: flex;
-    list-style: none;
-    margin: 3rem;
-    padding: 0;
-  }
-
-  .menu li {
-    margin-right: 20px;
-  }
-
-  .menu li:last-child {
-    margin-right: 0;
-  }
-
-  .menu a {
-    display: block;
-    padding: 10px;
-    color: var(--text_darkgrey);
-    color: var(--light_yellow);
-    text-decoration: none;
-    transition: color 0.3s;
-    text-align: end;
-    font-family: "neue_haas_grotesk_display75Bd";
-  }
-
-  .menu a:hover {
-    color: var(--orange);
-  }
-
-  .burger {
-    width: 30px;
-    height: 20px;
-    cursor: pointer;
-  }
-
-  .burger .line {
-    width: 100%;
-    height: 2px;
-    background-color: black;
-    margin-bottom: 5px;
-    transition: 0.2s linear;
-  }
-  .burger {
-    display: none;
-  }
   .hero-overlay {
     width: 100%;
   }
   .about {
     padding: 150px 10%;
-  }
-
-  /* Opdateret footer for desktop */
-  footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 70px;
-  }
-
-  .social-links {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 0px;
-
-    .footer-logo {
-      margin-left: 20%;
-    }
-
-    .footer-logo img {
-      height: 120px;
-    }
-  }
-
-  .social-links img {
-    width: 35px;
   }
 }

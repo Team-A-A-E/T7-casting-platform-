@@ -153,13 +153,8 @@ p {
   place-self: end;
 }
 @media (max-width: 768px) {
-  body {
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-top: 100px;
-  }
   .profile-containers {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   .box {
     grid-template-columns: 1fr;
@@ -171,12 +166,35 @@ p {
   .cta-book-now {
     grid-row: auto;
   }
+
+  .PersonDetails {
+    grid-row: 1;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    padding-left: 0px;
+    max-width: 40rem;
+    margin-top: 1rem;
+    color: var(--text_darkgrey);
+    font-family: "neue_haas_grotesk_display75Bd";
+  }
   .cta-book-now {
     grid-row: 2;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .filter-container {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0.3rem;
     margin-bottom: 2rem;
   }
 }
