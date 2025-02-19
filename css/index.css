@@ -5,6 +5,23 @@ body {
   background: var(--text_darkgrey);
 }
 
+.pulse {
+  animation-name: pulse_kf;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes pulse_kf {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 0.9;
+  }
+}
+
 a {
   text-decoration: none;
 }
