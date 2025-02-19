@@ -1,7 +1,7 @@
 main {
   background-color: var(--primary_grey);
   max-width: 1200px;
-  padding: 20px;
+  padding: 40px;
   margin: 0 auto;
 }
 
@@ -148,11 +148,15 @@ p {
   place-self: end;
 }
 
+.footer_left {
+  place-content: end;
+}
+
 .footer_right {
   align-self: end;
   place-self: end;
 }
-@media (max-width: 768px) {
+@media (max-width: 950px) {
   .profile-containers {
     grid-template-columns: 1fr 1fr;
   }
@@ -186,7 +190,7 @@ p {
     flex-direction: row;
     justify-content: center;
     font-size: 1.2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   .filter-container {

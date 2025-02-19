@@ -75,6 +75,28 @@ button a:hover {
   transition: all 0.2s ease;
 }
 
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(var(--primary_grey), var(--lightgrey));
+  margin-top: 4rem;
+  padding: 30px;
+}
+
+.footer-container img {
+  width: 60%;
+  place-self: end;
+}
+
+.footer_left {
+  place-content: end;
+}
+
+.footer_right {
+  align-self: end;
+  place-self: end;
+}
+
 @media screen and (max-width: 750px) {
   .login-signup-container {
     display: grid;

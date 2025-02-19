@@ -9,39 +9,21 @@ body {
   background-color: var(--primary_grey);
 }
 
-h1 {
-  font-family: "neue_haas_grotesk_display75Bd";
-  font-size: 60px;
-  color: var(--darkgrey);
-  text-align: center;
-  margin-top: 8rem;
-}
-
 h2 {
   font-family: "neue_haas_grotesk_display75Bd";
   font-size: 54px;
   color: var(--darkgrey);
   text-align: center;
-  margin-top: 8rem;
-  margin-bottom: 2rem;
+  margin-top: 7rem;
+  margin-bottom: 1.5rem;
 }
 
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  background: linear-gradient(var(--primary_grey), var(--lightgrey));
-  margin-top: 4rem;
-  padding: 30px;
-}
-
-.footer-container img {
-  width: 60%;
-  place-self: end;
-}
-
-.footer_right {
-  align-self: end;
-  place-self: end;
+h3 {
+  font-family: "neue_haas_grotesk_display65Md";
+  font-size: 24px;
+  color: var(--darkgrey);
+  text-align: center;
+  margin-bottom: 0.5rem;
 }
 
 p {
@@ -65,6 +47,7 @@ p {
 .add_to_basket {
   border-radius: 4px;
   margin-top: 0.6rem;
+  margin-bottom: 5rem;
   color: var(--darkgrey);
   border: solid 1px var(--orange);
   width: 400px;
@@ -87,6 +70,28 @@ p {
   color: var(--orange);
 }
 
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(var(--primary_grey), var(--lightgrey));
+  margin-top: 4rem;
+  padding: 30px;
+}
+
+.footer-container img {
+  width: 60%;
+  place-self: end;
+}
+
+.footer_left {
+  place-content: end;
+}
+
+.footer_right {
+  align-self: end;
+  place-self: end;
+}
+
 @media (max-width: 750px) {
   main {
     padding: 20px;
@@ -96,14 +101,15 @@ p {
     font-family: "neue_haas_grotesk_display75Bd";
     font-size: 40px;
     color: var(--darkgrey);
+    margin-top: 4rem;
   }
 
   h3 {
     font-family: "neue_haas_grotesk_display65Md";
-    font-size: 22px;
-    margin-top: 5rem;
-    margin-bottom: 1rem;
+    font-size: 21px;
     color: var(--darkgrey);
+    text-align: center;
+    margin-bottom: 1rem;
   }
 
   p {
@@ -112,5 +118,8 @@ p {
     margin-bottom: 1rem;
     max-width: 50rem;
     color: var(--darkgrey);
+  }
+  .add_to_basket {
+    margin-bottom: 3rem;
   }
 }

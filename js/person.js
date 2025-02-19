@@ -61,7 +61,7 @@ function showList(users) {
               <a href="mailto:"><h5>Send a message</h5></a>
             </div>
             <div class="add_to_basket">
-              <a href=""><h5>Book now</h5></a>
+              <a href="login.html"><h5>Book now</h5></a>
             </div>
           </div>
         </div>

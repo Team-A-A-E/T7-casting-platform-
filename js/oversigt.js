@@ -30,7 +30,7 @@ function showList(users) {
             <div class="PersonDetails">
               <h3 class="PersonName">${user.firstName} ${user.lastName}</h3>
             </div>
-            <a href="person.html?id=${user.id}" class="cta-book-now">BOOK NOW&nbsp;→</a>
+            <a href="person.html?id=${user.id}" class="cta-book-now">BOOK NOW&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↗</a>
           </div>
         </div>`
     )
