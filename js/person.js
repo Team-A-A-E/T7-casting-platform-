@@ -32,12 +32,12 @@ function showList(users) {
               <h4>${user.age} years, ${user.address.state}</h4>
             </div>
 
-            <img src="https://randomuser.me/api/portraits/men/${user.id}.jpg" alt="" />
+            <img src="https://randomuser.me/api/portraits/${user.gender == "female" ? "women" : "men"}/${user.id % 100}.jpg" alt="" />
           </div>
 
           <div class="grid_1-1_2">
-            <img src="https://randomuser.me/api/portraits/men/${user.id}.jpg" alt="" />
-            <img src="https://randomuser.me/api/portraits/men/${user.id}.jpg" alt="" />
+            <img src="https://randomuser.me/api/portraits/${user.gender == "female" ? "women" : "men"}/${user.id % 100}.jpg" alt="" />
+            <img src="https://randomuser.me/api/portraits/${user.gender == "female" ? "women" : "men"}/${user.id % 100}.jpg" alt="" />
           </div>
         </div>
         <div>
@@ -55,7 +55,7 @@ function showList(users) {
           </div>
           <div class="div_contact">
             <div class="add_to_basket">
-              <a href=""><h5>Save this profile</h5></a>
+              <a href="login.html"><h5>Save this profile</h5></a>
             </div>
             <div class="add_to_basket">
               <a href="mailto:"><h5>Send a message</h5></a>
