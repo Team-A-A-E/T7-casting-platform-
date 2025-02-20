@@ -55,12 +55,12 @@ function applyFilters(users) {
   showList(filteredUsers);
 }
 
-// Toggle dropdown visibility
+// Toggle på dropdown menuen så den bliver vist eller skjult
 document.querySelector(".filter-button").addEventListener("click", () => {
   document.querySelector(".filter-dropdown").classList.toggle("show");
 });
 
-// Close the dropdown if the user clicks outside of it
+// Lukker dropdown menuen når brugeren klikker uden for dropdown menuen
 window.onclick = function (event) {
   if (!event.target.matches(".filter-button")) {
     const dropdowns = document.getElementsByClassName("filter-dropdown");
