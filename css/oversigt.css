@@ -157,6 +157,10 @@ p {
   align-self: end;
   place-self: end;
 }
+
+a {
+  text-decoration: none;
+}
 @media (max-width: 950px) {
   .profile-containers {
     grid-template-columns: 1fr 1fr;

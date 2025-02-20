@@ -24,7 +24,9 @@ function showList(users) {
   console.log("Showing list of users:", users);
   const markup = users
     .map(
-      (user) => `<div class="box" data-gender="${user.gender}" data-age="${user.age}" data-category="${user.category}">
+      (user) => `
+      <div class="box" data-gender="${user.gender}" data-age="${user.age}" data-category="${user.category}">
+      <a href="person.html?id=${user.id}">
           <img src="https://randomuser.me/api/portraits/${user.gender == "female" ? "women" : "men"}/${user.id % 100}.jpg" alt="profile" class="profile-img" />
           <div class="feature">
             <div class="PersonDetails">
@@ -32,7 +34,9 @@ function showList(users) {
             </div>
             <a href="person.html?id=${user.id}" class="cta-book-now">BOOK NOW&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↗</a>
           </div>
-        </div>`
+          </a>
+        </div>
+      `
     )
     .join("");
   console.log("Generated markup:", markup);
